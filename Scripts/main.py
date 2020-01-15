@@ -271,5 +271,9 @@ def main():
 if __name__ == '__main__':
     logging.info("Using info")
     logging.debug("Using debug")
+    if not os.path.exists('..\\videos'):
+        os.mkdir('..\\videos')
+    if not os.path.exists('..\\music'):
+        os.mkdir('..\\music')
     main()
 
